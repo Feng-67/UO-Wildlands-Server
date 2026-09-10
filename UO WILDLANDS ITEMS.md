@@ -101,7 +101,7 @@ A placeable house decoration used to display equipment and outfits.
 
 ## Elixir of Rebirth
 
-Resurrect a pet if the pet's corpse has decayed as an alternative to veterinary.
+Resurrect a pet as an alternative to veterinary.
 
 ## Cleanup Vendor
 
@@ -118,7 +118,7 @@ Loyal canine companions to accompany you across the realm.
 
 - Instant Bond mount starting as a 3-slot, trainable up to 5-slots required
 - Minimum of 100.0 taming skill required
-- Based on the **Ancient Hellhound skillset** - comes with Healing but no Mortal Strike
+- Comes with Healing but no Mortal Strike
 - Each breed features a unique body model and distinct identity
 - **Available via Ultima Store**
 
