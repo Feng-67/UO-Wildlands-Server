@@ -1,4 +1,4 @@
-# UO WILDLANDS – A Ready To Play ServUO Server
+# UO WILDLANDS – A Ready to Play Ultima Online Server
 
 
 [![License: GPL](https://img.shields.io/badge/License-GPL-blue.svg)](LICENSE.txt)
