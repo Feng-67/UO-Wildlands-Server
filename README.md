@@ -31,8 +31,8 @@
 
 For a complete list of custom features, changes, and world modifications, see:
 
-- **FEATURES.md** – Custom systems, world changes, PvP/PvE settings, skill changes, and more
-- **ITEMS.md** – All custom items available on the Ultima Store and in-game
+- **UO WILDLANDS FEATURES.md** – Custom systems, world changes, PvP/PvE settings, skill changes, and more
+- **UO WILDLANDS ITEMS.md** – All custom items available on the Ultima Store and in-game
 
 ---
 
