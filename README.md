@@ -4,8 +4,9 @@
 [![GitHub license](https://img.shields.io/github/license/FENG-67/UO-WILDLANDS.svg?color=a)](LICENSE.txt)
 
 
-**UO Wildlands** is a custom Ultima Online server built on the ServUO emulator.  
-This repository contains the full server source and configuration as used on the UO Wildlands shard.
+**UO Wildlands** is a custom Ultima Online server built on ServUO, ready to play locally with minimal setup.
+
+> **Ready to explore?** This repo ships with a pre-populated world save, so you can log in immediately and see the shard exactly as it was left. No world generation required.
 
 ---
 
@@ -37,43 +38,97 @@ For a complete list of custom features, changes, and world modifications, see:
 
 ## ⚙️ Windows Setup
 
-1. **Clone or download** this repository to your local machine.
+The game world is already built and ready to go. Simply point the server at your Ultima Online install and start.
 
-2. **Edit the configuration files** in the `/Config` folder:
-   - `Server.cfg` – set your server name, IP/port, and other core settings.
-   - `DataPath.cfg` – point this to your **UO client installation** (e.g., `C:\Program Files\Ultima Online`).
-   - `AutoSave.cfg` – by default, auto‑saves are **disabled**; enable them if you wish.
-   - Review any other `.cfg` files to adjust gameplay, spawns, and world rules.
+---
+### 1. Download the server
+- Click the green **Code** button at the top of this page, then choose **Download ZIP**.  
+- Once it's downloaded, right-click the ZIP file and choose **Extract All**.  
+- Put the extracted folder somewhere easy to find, like your Desktop.
 
-3. **Compile the server**:
-   - Run `Compile.WIN - Debug.bat` for development (with debugging support).
-   - Run `Compile.WIN - Release.bat` for a production build.
+---
+### 2. Tell the server where your Ultima Online game is installed
+- Open the `Config` folder in the **UO-Wildlands-Server** directory.
+- Open the file called `DataPath.cfg` with Notepad.
+- Find the line that points to your UO folder and change it to match where your Ultima Online client is installed on your PC.
+  - For example: `C:\Ultima Online Classic`
+- Save the file and close it.
 
-4. **Launch the server**:
-   - Execute `ServUO.exe` from the compiled output.
-   - The console will display the listening IP and port once the server is ready.
+> Don't have Ultima Online installed? You'll need a valid copy of the classic client before the server will run.
 
-5. **Connect with your UO client** using the address and port you configured in `Server.cfg`.
+---
+### 3. Start the server
+- Double Click **`ServUO.exe`**.
+- A console window will open and start loading the world. This can take a minute the first time.
+- When you see a message like **"Listening on 127.0.0.1:2593"**, the server is ready.
+
+> Keep this window open while you play. Closing it shuts down the server.
+
+>  **Saving your progress:** Auto-save is **turned off by default** so the world stays exactly as shipped. To save your changes manually, type `[save` in-game as the owner. If you'd rather have the server save automatically, open `Config/AutoSave.cfg` and change `Enabled=False` to `Enabled=True`.
+
+---
+### 4. Log in and play
+- Open your Ultima Online client - for example ClassicUO, TazUO, Orion
+- Connect to **`127.0.0.1`** on port **`2593`** (this is your own PC).
+- Log in with one of the accounts listed in the **🔑 Accounts** section below.
+
+That's it — you're in. Explore, fight, build, and have fun.
+
+---
+## 🔑 Accounts
+
+This repository ships with two pre-configured accounts so you can log in and start playing right away:
+
+| Username | Password | Access Level | Characters |
+|----------|----------|--------------|------------|
+| `Demon`  | `admin1` | **Owner**    | 1          |
+| `Demon2` | `admin2` | Player       | 3          |
+
+- **Demon** is the shard owner account — full GM commands, world editing, and admin access.
+- **Demon2** is a regular player account with three characters - Sampire, Archer Tamer, Pally Tamer
+
+> **Note:** These credentials are intentionally shared for convenience. Since this is a local server running on your own machine, there's no security risk — you're free to change the passwords or create additional accounts once you're up and running with the command [password or via [admin
+
+### 🛠️ GM Commands
+
+Once logged in as **Demon**, you can access admin commands from a gump by typing:
+
+**[mycommands**
+
+Alternatively, type **[admin** for standard ServUO server owner commands
 
 ---
 
 ## 📦 Requirements
 
 - Windows 7 or newer
-- [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) or [.NET 6.0+](https://dotnet.microsoft.com/download)
+- [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) or [.NET 6.0+](https://dotnet.microsoft.com/download) — needed to run the server
 - A valid Ultima Online client (classic) installed
 
+---
 
+## 🧰 Troubleshooting
+
+### The server won't start or throws a compile error
+
+If `ServUO.exe` fails to launch, or you see a red error message in the console window:
+
+1. Click inside the console window.
+2. Press **Ctrl+C** to copy the full error text.
+3. Open a chatbot like ChatGPT, Claude, or Gemini.
+4. Paste the error with **Ctrl+V** and ask what it means.
+
+> **Note:** ServUO startup errors are caused by changes in the code — a chatbot can troubleshoot the problem if you share the related cs file.
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **GNU General Public License v3.0** – see the [LICENSE.txt](LICENSE.txt) file for details.
+This project builds upon **ServUO**, which is licensed under the **GNU General Public License v2.0 (GPL-2.0)**.
 
-The entire **UO Wildlands** fork—including all original ServUO code, custom scripts, and modifications—is licensed in its entirety under the **GNU General Public License v3 (GPL-3)**.
+Custom code, scripts, and modifications made specifically for **UO Wildlands** are released under the **GNU General Public License v3.0 (GPL-3.0)**. See the [LICENSE.txt](LICENSE.txt) file for the full license text.
 
-See the [LICENSE.txt](LICENSE.txt) file for the full license text.
+Because the ServUO core and UO Wildlands additions are distributed together as a single work, the combined distribution is provided under the terms of the **GNU General Public License v3.0**. However, the ServUO core components retain their original GPL-2.0 licensing.
 
 You are free to:
 - Use this code for any purpose (including commercial)
@@ -82,5 +137,5 @@ You are free to:
 
 **In return**, you must:
 - Keep the source code open and available
-- Retain the GPL-3 license
+- Retain the GPL license(s)
 - Provide credit where it's due
