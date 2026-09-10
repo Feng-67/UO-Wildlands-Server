@@ -61,9 +61,8 @@ Veteran Rewards are disabled and rewards are now available on the Ultima Store.
 ### Named Pets
 
 - **Named Pets** are unique creatures that do not ordinarily spawn in the world - they are accessed via Encounters - wave based spawns found in specific locations around the world with **100% chance** of the creature spawning once the Encounter is complete.
-- **Named Pets** include creatures such as the Windrunner, Ancient Hellhound and many more. There are currently fifteen Named Pets to collect.
+- **Named Pets** There are currently fifteen Named Pets to collect.
 - **Named Pets** generally require **108 Taming skill** minimum
-- Detailed information for each **Named Pet** can be found in our Discord
 
 ### Legendary Pets
 
