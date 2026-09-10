@@ -1,0 +1,244 @@
+/*
+ * UO Wildlands Custom Script
+ * Derived from ServUO Core
+ * Compiled & Modified by: [Feng / UO Wildlands Team]
+ * * Licensed under the GNU General Public License v3.0 (GPL-3.0)
+ */
+using Server.Items;
+
+namespace Server.Mobiles
+{
+    [CorpseName("a shadow spider corpse")]
+    public class ShadowSpider : BaseCreature
+    {
+        public override bool CanStealth { get { return true; } } 
+
+        [Constructable]
+        public ShadowSpider()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            Name = "Shadow Spider";
+            Body = 737;
+            
+            SetStr(100, 104);
+            SetDex(200, 220);
+            SetInt(29, 50);
+
+            SetHits(125, 144);
+
+            SetDamage(15, 18);
+
+            SetDamageType(ResistanceType.Physical, 20);
+            SetDamageType(ResistanceType.Poison, 80);
+
+            SetResistance(ResistanceType.Physical, 0);
+            SetResistance(ResistanceType.Fire, 30, 35);
+            SetResistance(ResistanceType.Cold, 30, 35);
+            SetResistance(ResistanceType.Poison, 40, 45);
+            SetResistance(ResistanceType.Energy, 95, 100);
+
+            SetSkill(SkillName.Anatomy, 2.0, 3.8);
+            SetSkill(SkillName.MagicResist, 47.5, 57.9);
+            SetSkill(SkillName.Poisoning, 70.5, 73.5);
+            SetSkill(SkillName.Tactics, 73.3, 78.9);
+            SetSkill(SkillName.Wrestling, 92.5, 94.6);
+            SetSkill(SkillName.Hiding, 110.3, 119.9);
+            SetSkill(SkillName.Stealth, 110.5, 119.6);
+
+            Tamable = true;
+            ControlSlots = 3;
+            MinTameSkill = 108;
+        }
+
+        public ShadowSpider(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override TrainingDefinition TrainingDefinition
+        {
+            get
+            {
+                return new TrainingDefinition(typeof(ShadowSpider), Class.None,
+                (
+                    // Magical Schools
+                    MagicalAbility.Chivalry |
+                    //MagicalAbility.Discordance |
+                    MagicalAbility.MageryMastery |
+                    MagicalAbility.Mysticism |
+                    MagicalAbility.Necromage |
+                    MagicalAbility.Necromancy |
+                    MagicalAbility.Poisoning |
+                    MagicalAbility.Spellweaving |
+                    //Tokuno
+                    MagicalAbility.Bushido |
+                    MagicalAbility.Ninjitsu |
+                    //Melee
+                    //MagicalAbility.Bashing |
+                    //MagicalAbility.BattleDefense |
+                    //MagicalAbility.Piercing |
+                    //MagicalAbility.Slashing |
+                    MagicalAbility.WrestlingMastery
+                ),
+                new SpecialAbility[]
+                {
+                    SpecialAbility.AngryFire,
+                    SpecialAbility.ConductiveBlast,
+                    SpecialAbility.DragonBreath,
+                    //SpecialAbility.GraspingClaw,
+                    SpecialAbility.Inferno,
+                    SpecialAbility.LifeLeech,
+                    SpecialAbility.LightningForce,
+                    SpecialAbility.ManaDrain,
+                    SpecialAbility.RagingBreath,
+                    SpecialAbility.Repel,
+                    //SpecialAbility.RuneCorruption,
+                    SpecialAbility.SearingWounds,
+                    //SpecialAbility.StealLife,
+                    //SpecialAbility.StickySkin,
+                    //SpecialAbility.TailSwipe,
+                    SpecialAbility.VenomousBite,
+                    SpecialAbility.ViciousBite,
+                },
+                new WeaponAbility[]
+                {
+                    WeaponAbility.ArmorIgnore,
+                    WeaponAbility.ArmorPierce,
+                    WeaponAbility.Bladeweave,
+                    WeaponAbility.BleedAttack,
+                    WeaponAbility.Block,
+                    WeaponAbility.ColdWind,
+                    WeaponAbility.ConcussionBlow,
+                    WeaponAbility.CrushingBlow,
+                    WeaponAbility.Disarm,
+                    WeaponAbility.Dismount,
+                    WeaponAbility.Feint,
+                    WeaponAbility.ForceOfNature,
+                    WeaponAbility.FrenziedWhirlwind,
+                    WeaponAbility.MortalStrike,
+                    WeaponAbility.NerveStrike,
+                    WeaponAbility.ParalyzingBlow,
+                    WeaponAbility.PsychicAttack,
+                    WeaponAbility.TalonStrike,
+                },
+                new AreaEffect[]
+                {
+                    AreaEffect.AuraOfEnergy,
+                    AreaEffect.ExplosiveGoo,
+                    AreaEffect.EssenceOfEarth,
+                    AreaEffect.AuraOfNausea,
+                    AreaEffect.PoisonBreath,
+                    AreaEffect.EssenceOfDisease,
+                },
+                3, 5);
+            }
+        }
+
+        public override bool CanAngerOnTame { get { return true; } }
+        public override int Meat { get { return 3; } }
+        public override int Hides { get { return 10; } }
+        public override FoodType FavoriteFood { get { return FoodType.Meat; } }
+                
+                
+        public override void OnDamage(int amount, Mobile from, bool willKill)
+        {
+            RevealingAction();
+            base.OnDamage(amount, from, willKill);
+        }
+
+        public override void OnDamagedBySpell(Mobile from)
+        {
+            RevealingAction();
+            base.OnDamagedBySpell(from);
+        }
+
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
+        public override void GenerateLoot()
+        {
+            AddLoot(LootPack.Rich);
+        }
+
+        public override int GetIdleSound()
+        {
+            return 1605;
+        }
+
+        public override int GetAngerSound()
+        {
+            return 1602;
+        }
+
+        public override int GetHurtSound()
+        {
+            return 1604;
+        }
+
+        public override int GetDeathSound()
+        {
+            return 1603;
+        }
+
+        public override void OnThink()
+        {
+
+            if (!this.Alive || this.Deleted)
+            {
+                return;
+            }
+
+            if (!this.Hidden)
+            {
+                double chance = 0.05;
+
+                if (this.Hits < 20)
+                {
+                    chance = 0.1;
+                }
+
+                if (this.Poisoned)
+                {
+                    chance = 0.01;
+                }
+
+                if (Utility.RandomDouble() < chance)
+                {
+                    HideSelf();
+                }
+                base.OnThink();
+            }
+        }
+
+        private void HideSelf()
+        {
+            if (Core.TickCount >= this.NextSkillTime)
+            {
+                Effects.SendLocationParticles(
+                    EffectItem.Create(this.Location, this.Map, EffectItem.DefaultDuration), 0x3728, 10, 10, 2023);
+
+                this.PlaySound(0x22F);
+                this.Hidden = true;
+
+                this.UseSkill(SkillName.Stealth);
+            }
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write(0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            var version = reader.ReadInt();
+        }
+    }
+}
