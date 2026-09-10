@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<accounts count="2">
+	<account>
+		<username>Demon</username>
+		<newCryptPassword>33-3D-7B-79-73-5D-86-1D-DD-9D-57-71-06-80-77-C3-8B-26-3B-58</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<flags>2</flags>
+		<created>2026-01-30T13:31:22.884182Z</created>
+		<lastLogin>2026-09-10T05:24:02.7125253Z</lastLogin>
+		<totalGameTime>P8DT7H22M5.4287514S</totalGameTime>
+		<chars>
+			<char index="0">105</char>
+		</chars>
+		<tags>
+			<tag name="numRewardsChosen">2</tag>
+			<tag name="Bonus Bank Slots[0x00000069]">50</tag>
+			<tag name="maxHouses">02</tag>
+			<tag name="Chat">Disabled</tag>
+		</tags>
+		<totalCurrency>161.76840332500055</totalCurrency>
+		<sovereigns>896248</sovereigns>
+	</account>
+	<account>
+		<username>Demon2</username>
+		<newCryptPassword>7E-D0-74-B0-61-20-29-42-E3-72-87-14-39-A8-F2-E7-83-A4-D1-AB</newCryptPassword>
+		<flags>2</flags>
+		<created>2026-02-04T07:38:21.4165763Z</created>
+		<lastLogin>2026-09-10T05:30:00.8158895Z</lastLogin>
+		<totalGameTime>P3DT12H5M24.7191755S</totalGameTime>
+		<chars>
+			<char index="0">33827</char>
+			<char index="1">9373</char>
+			<char index="2">7406</char>
+		</chars>
+		<comments>
+			<comment addedBy="System" lastModified="2026-05-16T03:17:38.959045Z">Character #5 0xA83C "Feng Yew" deleted by 127.0.0.1</comment>
+			<comment addedBy="System" lastModified="2026-05-16T03:18:24.6026428Z">Character #3 0xA745 "Thade" deleted by 127.0.0.1</comment>
+			<comment addedBy="System" lastModified="2026-05-16T03:19:16.7006935Z">Character #2 0x60D1 "Foxglove" deleted by 127.0.0.1</comment>
+			<comment addedBy="System" lastModified="2026-05-16T05:44:17.3972186Z">Character #4 0xA814 "Himiko" deleted by 127.0.0.1</comment>
+		</comments>
+		<tags>
+			<tag name="maxHouses">02</tag>
+			<tag name="numRewardsChosen">1</tag>
+			<tag name="Chat">Disabled</tag>
+		</tags>
+		<totalCurrency>1.1000862280000419</totalCurrency>
+		<sovereigns>132510</sovereigns>
+	</account>
+</accounts>
