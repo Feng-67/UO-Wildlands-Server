@@ -1,4 +1,4 @@
-# UO Wildlands – Custom ServUO Server
+# UO WILDLANDS – A Ready To Play ServUO Server
 
 
 [![License: GPL](https://img.shields.io/badge/License-GPL-blue.svg)](LICENSE.txt)
