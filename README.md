@@ -89,6 +89,16 @@ This repository ships with two pre-configured accounts so you can log in and sta
 
 > **Note:** These credentials are intentionally shared for convenience. Since this is a local server running on your own machine, there's no security risk — you're free to change the passwords or create additional accounts once you're up and running with the command [password or via [admin
 
+---
+
+## ⚠️ Keep Your Server on Your Own PC
+
+UO Wildlands comes with ready-made login details and no extra security turned on. That's on purpose — it's meant to run on your own computer, just for you.
+
+Public game servers are usually hosted in the cloud on a Virtual Private Servers, where the hosting provider handles security, updates, and keeping the server online.
+
+---
+
 ### 🛠️ GM Commands
 
 Once logged in as **Demon**, you can access admin commands from a gump by typing:
