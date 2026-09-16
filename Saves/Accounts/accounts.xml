@@ -6,8 +6,8 @@
 		<accessLevel>Owner</accessLevel>
 		<flags>2</flags>
 		<created>2026-01-30T13:31:22.884182Z</created>
-		<lastLogin>2026-09-10T05:24:02.7125253Z</lastLogin>
-		<totalGameTime>P8DT7H22M5.4287514S</totalGameTime>
+		<lastLogin>2026-09-16T02:13:42.8514807Z</lastLogin>
+		<totalGameTime>P9DT27M10.999109S</totalGameTime>
 		<chars>
 			<char index="0">105</char>
 		</chars>
@@ -17,16 +17,16 @@
 			<tag name="maxHouses">02</tag>
 			<tag name="Chat">Disabled</tag>
 		</tags>
-		<totalCurrency>161.76840332500055</totalCurrency>
-		<sovereigns>896248</sovereigns>
+		<totalCurrency>161.76840325000057</totalCurrency>
+		<sovereigns>892798</sovereigns>
 	</account>
 	<account>
 		<username>Demon2</username>
 		<newCryptPassword>7E-D0-74-B0-61-20-29-42-E3-72-87-14-39-A8-F2-E7-83-A4-D1-AB</newCryptPassword>
 		<flags>2</flags>
 		<created>2026-02-04T07:38:21.4165763Z</created>
-		<lastLogin>2026-09-10T05:30:00.8158895Z</lastLogin>
-		<totalGameTime>P3DT12H5M24.7191755S</totalGameTime>
+		<lastLogin>2026-09-16T02:22:57.7703427Z</lastLogin>
+		<totalGameTime>P4DT8H36M19.0593914S</totalGameTime>
 		<chars>
 			<char index="0">33827</char>
 			<char index="1">9373</char>
@@ -37,13 +37,14 @@
 			<comment addedBy="System" lastModified="2026-05-16T03:18:24.6026428Z">Character #3 0xA745 "Thade" deleted by 127.0.0.1</comment>
 			<comment addedBy="System" lastModified="2026-05-16T03:19:16.7006935Z">Character #2 0x60D1 "Foxglove" deleted by 127.0.0.1</comment>
 			<comment addedBy="System" lastModified="2026-05-16T05:44:17.3972186Z">Character #4 0xA814 "Himiko" deleted by 127.0.0.1</comment>
+			<comment addedBy="System" lastModified="2026-09-16T02:19:57.9455693Z">Character #4 0x121F "Feng" deleted by 127.0.0.1</comment>
 		</comments>
 		<tags>
 			<tag name="maxHouses">02</tag>
 			<tag name="numRewardsChosen">1</tag>
 			<tag name="Chat">Disabled</tag>
 		</tags>
-		<totalCurrency>1.1000862280000419</totalCurrency>
-		<sovereigns>132510</sovereigns>
+		<totalCurrency>0.0013708960000419321</totalCurrency>
+		<sovereigns>3655</sovereigns>
 	</account>
 </accounts>
