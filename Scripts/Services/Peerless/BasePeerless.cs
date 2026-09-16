@@ -134,6 +134,10 @@ namespace Server.Mobiles
                 }
             }
 
+            // ▼▼▼ INSERT HERE ▼▼▼
+            TryDropRareArtifacts(c);
+            // ▲▲▲ INSERT HERE ▲▲▲
+
             if (m_Altar != null)
                 m_Altar.OnPeerlessDeath();
         }
@@ -297,7 +301,71 @@ namespace Server.Mobiles
             for (int i = 0; i < count; i ++)
                 PackItem(Loot.RandomTalisman());
         }
-		
+
+        // ▼▼▼ ADD YOUR NEW REGION HERE ▼▼▼
+        #region Rare / Very Rare Drops
+
+        private static readonly Type[] m_RareDrops = new Type[]
+        {
+            typeof(ArtisansEsteem), typeof(DrusillasAthame), typeof(RobeOfTheDarkMonk), typeof(SplinterFromTheTreeOfStrife),
+            typeof(WildfireOstard), typeof(DrogenisSpellbook), typeof(BrambleBarbWhip), typeof(BriarThornWhip),
+            typeof(HairDye2755), typeof(SawPalmettaWhip), typeof(SerpentSkinQuiver), typeof(SilverbranchBow),
+            typeof(BalronBoneArmor), typeof(GeneralLethesEpaulettes), typeof(LordMorphiusEpaulettes), typeof(WildfireLantern),
+            typeof(MantleOfTheArchlich), typeof(ScabbardOfJuonar), typeof(DivineSanctifier), typeof(FeudalCloakOfElements),
+            typeof(OzymandiasHiryu), typeof(SerpentsBite), typeof(WarlordSash), typeof(HairDye2744)
+        };
+
+        private static readonly Type[] m_VeryRareDrops = new Type[]
+        {
+            typeof(AnBalXen), typeof(CorruptedPaladinVambraces), typeof(DivinumLuminous), typeof(ExporMalasFlamus),
+            typeof(GlovesOfTheArchlich), typeof(GlovesOfTheHolyWarrior), typeof(GrimoireOfNature), typeof(InCorpManiXen),
+            typeof(MarkOfWildfire), typeof(RelviniansSpellbook), typeof(SentinelsMempo), typeof(ShugenjasRaiment),
+            typeof(TheLexiconOfJuonar), typeof(UmbriasGrimoire), typeof(UmbriasSpellbook), typeof(WealdCodex)
+        };
+
+        public virtual double RareDropChance { get { return 0.05; } }
+        public virtual double VeryRareDropChance { get { return 0.01; } }
+
+        public virtual void TryDropRareArtifacts(Container c)
+        {
+            if (m_RareDrops.Length > 0 && Utility.RandomDouble() < RareDropChance)
+                GiveArtifactToLooter((Item)Activator.CreateInstance(m_RareDrops[Utility.Random(m_RareDrops.Length)]), c);
+
+            if (m_VeryRareDrops.Length > 0 && Utility.RandomDouble() < VeryRareDropChance)
+                GiveArtifactToLooter((Item)Activator.CreateInstance(m_VeryRareDrops[Utility.Random(m_VeryRareDrops.Length)]), c);
+        }
+
+        private void GiveArtifactToLooter(Item artifact, Container c)
+        {
+            List<DamageStore> rights = GetLootingRights();
+
+            if (rights.Count > 0)
+            {
+                Mobile m = rights[Utility.Random(rights.Count)].m_Mobile;
+
+                if (m != null && m.NetState != null)
+                {
+                    if (m.Backpack == null || !m.Backpack.TryDropItem(m, artifact, false))
+                        m.BankBox.DropItem(artifact);
+
+                    m.SendMessage(0x35, "You've received a rare artifact! {0}", artifact.Name ?? artifact.GetType().Name);
+                }
+                else
+                {
+                    // Looter offline or invalid — fall back to corpse so the item isn't lost
+                    c.DropItem(artifact);
+                }
+            }
+            else
+            {
+                // No looting rights (edge case) — fall back to corpse
+                c.DropItem(artifact);
+            }
+        }
+
+        #endregion
+        // ▲▲▲ END NEW REGION ▲▲▲
+
         #region Fire Ring
         private static readonly int[] m_North = new int[]
         {
