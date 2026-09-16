@@ -6,7 +6,7 @@
 
 **UO Wildlands** is a custom Ultima Online server built on ServUO, ready to play locally with minimal setup. No world generation required.
 
-**Ready to explore?** This repo ships with a pre-populated world save, so you can log in immediately and see the shard exactly as it was left.
+**Ready to explore?** This repo ships with a pre-populated world save, so you can log in immediately and experience and play the shard solo.
 
 ---
 
