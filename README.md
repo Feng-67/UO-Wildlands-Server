@@ -31,9 +31,11 @@
 
 For a complete list of custom features, changes, and world modifications, see:
 
-- **UO-Wildlands-Features.md** – Custom systems, world changes, PvP/PvE settings, skill changes, and more
-- **UO-Wildlands-Items.md** – All custom items available on the Ultima Store and in-game
-- **Also viewable in the GitHub Wiki**
+- **[UO-Wildlands-Features.md](UO-Wildlands-Features.md)** – Custom systems, world changes, PvP/PvE settings, skill changes, and more
+- **[UO-Wildlands-Items.md](UO-Wildlands-Items.md)** – All custom items available on the Ultima Store and in-game
+
+> 📚 Prefer browsing online? Both are also available in the **[GitHub Wiki](https://github.com/Feng-67/UO-Wildlands-Server/wiki)**
+
 ---
 
 ## ⚙️ Windows Setup
