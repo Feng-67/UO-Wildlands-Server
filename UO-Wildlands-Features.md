@@ -164,7 +164,7 @@ Dungeon density and creature spawns across Felucca have been rebalanced to incre
 - Archery Buttes allow skill training up to 90 skills in Archery or Throwing. This applies to buttes around the world and the butte purchasable from the Cleanup NPC
 - Pickpocket Dip allows skill training up to 120 in Stealing. This applies to dips around the world or crafted by Tinkers or Carpenters
 
-## Global Chat & Commands
+## Player Global Chat & Commands
 
 | Command | Description |
 |---------|-------------|
