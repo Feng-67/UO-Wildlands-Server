@@ -38,6 +38,7 @@ Seasonal events such as Khaldun are permanently enabled:
 - Kotl Dungeon
 - Krampus
 - Rising Tide - Plunder beacons / Sea Market
+- Fellowship - Blackthorn's Dungeon and Virtue Artifacts
 
 ### Plunder Beacon Rewards
 
@@ -45,8 +46,6 @@ Seasonal events such as Khaldun are permanently enabled:
 - **Killing Plunder Beacon Orc Crew** — 50% chance to award ALL players within 20 tiles a random quality Maritime Cargo (Grandmaster, Exalted, or Legendary)
 - **Killing any Pirate** (PirateCrew, PirateCaptain, MerchantCaptain, MerchantCrew, plus DeepSeaSerpent) — 50% chance to award ALL players within 20 tiles a random quality Maritime Cargo
 - **All cargo is placed directly into each player's backpack**
-
-- Fellowship - Blackthorn's Dungeon and Virtue Artifacts
 
 ## Veteran Rewards
 
@@ -151,7 +150,7 @@ Dungeon density and creature spawns across Felucca have been rebalanced to incre
 ## Technical & Global Changes
 
 - **Balance Adjustments:** Boss HP (specifically Melisande) has been normalized to 50k HP. Medusa and Stygian Dragon now drop peerless ingredients
-- **Loot Tables:** Select mobs utilize slightly improved loot profiles
+- **Loot Tables:** Select mobs utilize slightly improved loot profiles. Peerless Bosses have a chance to drop rare and very rare items, selected from several 'Treasures Of' loot tables - this is in addition to normal peerless loot
 
 ## Exploration-Based Testing
 
