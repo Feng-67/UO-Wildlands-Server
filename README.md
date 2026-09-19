@@ -4,9 +4,9 @@
 [![License: GPL](https://img.shields.io/badge/License-GPL-blue.svg)](LICENSE.txt)
 
 
-**UO Wildlands** is a custom Ultima Online server built on ServUO, ready to play locally with minimal setup. No world generation required.
+**UO Wildlands** is a custom Ultima Online server built on ServUO, ready to play locally with minimal setup.
 
-**Ready to explore?** This repo ships with a pre-populated world save, so you can log in immediately and experience and play the shard solo.
+**Ready to explore?** This repo ships with a pre-populated world save, so you can log in immediately.
 
 ---
 
@@ -34,7 +34,7 @@ For a complete list of custom features, changes, and world modifications, see:
 - **[UO-Wildlands-Features.md](UO-Wildlands-Features.md)** – Custom systems, world changes, PvP/PvE settings, skill changes, and more
 - **[UO-Wildlands-Items.md](UO-Wildlands-Items.md)** – All custom items available on the Ultima Store and in-game
 
-> 📚 Prefer browsing online? Both are also available in the **[GitHub Wiki](https://github.com/Feng-67/UO-Wildlands-Server/wiki)**
+> Prefer browsing online? Both are also available in the **[GitHub Wiki](https://github.com/Feng-67/UO-Wildlands-Server/wiki)**
 
 ---
 
