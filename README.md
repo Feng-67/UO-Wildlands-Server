@@ -61,12 +61,17 @@ The game world is already built and ready to go. Simply point the server at your
 ---
 ### 3. Start the server
 - Double Click **`ServUO.exe`**.
+
+> SmartScreen warning? Windows may say "Windows protected your PC" for the installer or launcher.
+> This is normal for unsigned apps — click More info -> Run anyway.
+
 - A console window will open and start loading the world. This can take a minute the first time.
 - When you see a message like **"Listening on 127.0.0.1:2593"**, the server is ready.
 
 > Keep this window open while you play. Closing it shuts down the server.
 
->  **Saving your progress:** Auto-save is **turned off by default** so the world stays exactly as shipped. To save your changes manually, type `[save` in-game as the owner. If you'd rather have the server save automatically, open `Config/AutoSave.cfg` and change `Enabled=False` to `Enabled=True`.
+- **Saving your progress:** Auto-save is **turned off by default** so the world stays exactly as shipped.
+- To save your changes manually, type `[save` in-game as the owner. If you'd rather have the server save automatically, open `Config/AutoSave.cfg` and change `Enabled=False` to `Enabled=True`.
 
 ---
 ### 4. Log in and play
