@@ -123,28 +123,19 @@ Alternatively, type **[admin** for standard ServUO server owner commands
 ## 📦 Requirements
 
 <p>
-  <a href="https://www.microsoft.com/windows">
-    <img src="https://img.shields.io/badge/Windows-10%20or%20newer-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows 10 or newer">
-  </a>
-  <a href="https://www.uo.com/">
-    <img src="https://img.shields.io/badge/Ultima%20Online-Classic%20Client-8B4513?style=for-the-badge" alt="Ultima Online Classic Client">
-  </a>
+  <a href="https://www.microsoft.com/windows"><img src="https://img.shields.io/badge/Windows-10%20or%20newer-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows 10 or newer"></a><a href="https://www.uo.com/"><img src="https://img.shields.io/badge/Ultima%20Online-Classic%20Client-8B4513?style=for-the-badge" alt="Ultima Online Classic Client"></a>
 </p>
 
 **To play:**
 - Windows 10 or newer
 - A valid Ultima Online client (classic) installed
 
-> .NET Framework 4.8 ships with Windows 10 and 11, so there's nothing extra to install.
+That's it. .NET Framework 4.8 ships with Windows 10 and 11, so there's nothing extra to install.
+
 
 **To modify or create new scripts:**
 <p>
-  <a href="https://visualstudio.microsoft.com/downloads/">
-    <img src="https://img.shields.io/badge/Visual%20Studio-2019%20%7C%202022-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white" alt="Visual Studio 2019 or 2022">
-  </a>
-  <a href="https://dotnet.microsoft.com/download/dotnet-framework/net48">
-    <img src="https://img.shields.io/badge/.NET%20Framework-4.8%20Developer%20Pack-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET Framework 4.8 Developer Pack">
-  </a>
+  <a href="https://visualstudio.microsoft.com/vs/older-downloads/"><img src="https://img.shields.io/badge/Visual%20Studio-2019%20%7C%202022-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white" alt="Visual Studio 2019 or 2022"></a><a href="https://dotnet.microsoft.com/download/dotnet-framework/net48"><img src="https://img.shields.io/badge/.NET%20Framework-4.8%20Developer%20Pack-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET Framework 4.8 Developer Pack"></a>
 </p>
 
 - Visual Studio 2019 or 2022 — during install, select the **".NET Desktop Development"** workload and check **".NET Framework 4.8 development tools"** in the optional components list.
