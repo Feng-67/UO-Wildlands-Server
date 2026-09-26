@@ -130,7 +130,7 @@ Alternatively, type **[admin** for standard ServUO server owner commands
 - Windows 10 or newer
 - A valid Ultima Online client (classic) installed
 
-That's it. .NET Framework 4.8 ships with Windows 10 and 11, so there's nothing extra to install.
+> .NET Framework 4.8 ships with Windows 10 and 11, so there's nothing extra to install.
 
 
 **To modify or create new scripts:**
