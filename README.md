@@ -8,10 +8,6 @@
 
 **Ready to explore?** This repo ships with a pre-populated world save, so you can log in immediately.
 
-**This repository is archived and not actively maintained.**  
-
-For an active alternative, please see [UO Wildlands Scripts-ModernUO](https://github.com/Feng-67/UO-Wildlands-Scripts-ModernUO.git)
-
 ---
 
 ## Support Me
