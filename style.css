@@ -50,7 +50,7 @@ header h1 {
     background: var(--bg-secondary);
     border-bottom: 1px solid var(--border);
     position: sticky;
-    top: 72px;
+    top: 0;
     z-index: 99;
     text-align: center;
 }
@@ -123,6 +123,11 @@ nav.tabs > .container {
 /* Feature List */
 .feature-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 8px; }
 .feature-list li { padding: 10px 14px; background: var(--bg-secondary); border-radius: var(--radius); border: 1px solid var(--border); font-size: 0.95rem; }
+
+/* Plain List */
+.plain-list {
+    list-style: none;
+}
 
 /* Feature Grid */
 .feature-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; margin-top: 20px; }
