@@ -73,6 +73,15 @@ The game world is already built and ready to go. Simply point the server at your
 > SmartScreen warning? Windows may say "Windows protected your PC" for the installer or launcher.
 > This is normal for unsigned apps — click More info -> Run anyway.
 
+**Verify your download (recommended)**
+
+> After downloading `ServUO.exe` and `SHA256SUMS.txt` into the same folder, open PowerShell in that folder and run:
+> 
+> (Get-FileHash .\ServUO.exe -Algorithm SHA256).Hash
+> 
+> The output should match the value in SHA256SUMS.txt. If it doesn't, do not run the file.
+
+
 - A console window will open and start loading the world. This can take a minute the first time.
 - When you see a message like **"Listening on 127.0.0.1:2593"**, the server is ready.
 
