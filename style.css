@@ -175,6 +175,23 @@ nav.tabs > .container {
 /* Notes */
 .note { background: rgba(210, 153, 34, 0.1); border-left: 3px solid var(--warning); padding: 12px 16px; border-radius: 0 var(--radius) var(--radius) 0; margin: 16px 0; font-size: 0.9rem; }
 
+.podcast {
+    background: #f4f1ea;
+    border-left: 4px solid #8b6f3d;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+}
+
+    .podcast h3 {
+        margin-top: 0;
+    }
+
+    .podcast audio {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
 /* Links */
 a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
 a:hover { color: var(--accent-hover); text-decoration: underline; }
