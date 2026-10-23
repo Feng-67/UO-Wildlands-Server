@@ -10,11 +10,7 @@
 
 ---
 
-## Support Me
-
-If you find my work useful, you can support me here:
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/paypalme/WarriorOfDestiny)
+[![YouTube Channel](https://img.shields.io/badge/YouTube-Warrior%20of%20Destiny-lightgrey?style=for-the-badge&logo=youtube&logoColor=white&labelColor=FF0000)](https://www.youtube.com/@Warrior_of_Destiny)
 
 ---
 
@@ -68,7 +64,7 @@ The game world is already built and ready to go. Simply point the server at your
 
 ---
 ### 3. Start the server
-- Double Click **`ServUO.exe`**.
+- Click **`ServUO.exe`**.
 
 > SmartScreen warning? Windows may say "Windows protected your PC" for the installer or launcher.
 > This is normal for unsigned apps — click More info -> Run anyway.
