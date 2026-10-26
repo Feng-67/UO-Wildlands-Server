@@ -95,17 +95,28 @@ namespace Server.SkillHandlers
             {
                 int armorRating = GetArmorRating(m);
 
-                if (armorRating >= (Core.AOS ? 42 : 26)) //I have a hunch '42' was chosen cause someone's a fan of DNA
+                if (armorRating >= (Core.AOS ? 42 : 26))
                 {
                     m.SendLocalizedMessage(502727); // You could not hope to move quietly wearing this much armor.
                     m.RevealingAction();
                     BuffInfo.RemoveBuff(m, BuffIcon.HidingAndOrStealth);
                 }
-                else if (m.CheckSkill(SkillName.Stealth, -20.0 + (armorRating * 2), (Core.AOS ? 60.0 : 80.0) + (armorRating * 2)))
+                else
                 {
-                    int steps = (int)(m.Skills[SkillName.Stealth].Value / (Core.AOS ? 5.0 : 10.0));
+                    double minSkill = -20.0 + (armorRating * 2);
+                    double maxSkill = (Core.AOS ? 60.0 : 80.0) + (armorRating * 2);
 
-                    if (steps < 1)
+                    if (m.Skills[SkillName.Stealth].Cap > maxSkill)
+                        maxSkill = m.Skills[SkillName.Stealth].Cap;
+
+                    if (maxSkill < minSkill + 10)
+                        maxSkill = minSkill + 10;
+
+                    if (m.CheckSkill(SkillName.Stealth, minSkill, maxSkill))
+                    {
+                        int steps = (int)(m.Skills[SkillName.Stealth].Value / (Core.AOS ? 5.0 : 10.0));
+
+                        if (steps < 1)
                         steps = 1;
 
                     m.AllowedStealthSteps = steps;
@@ -122,6 +133,7 @@ namespace Server.SkillHandlers
                     m.SendLocalizedMessage(502731); // You fail in your attempt to move unnoticed.
                     m.RevealingAction();
                     BuffInfo.RemoveBuff(m, BuffIcon.HidingAndOrStealth);
+                    }
                 }
             }
 

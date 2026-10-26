@@ -42,7 +42,7 @@ namespace Server.Items
                     return;
                 }
                 
-                if (!from.CheckTargetSkill(SkillName.ItemID, o, 0, 100))
+                if (!from.CheckTargetSkill(SkillName.ItemID, o, 0, 120))
                 {
                     from.PrivateOverheadMessage(MessageType.Emote, 0x3B2, 1041352, from.NetState); // You have no idea how much it might be worth.
                     return;
@@ -144,7 +144,7 @@ namespace Server.Items
                 }
                 else if (o is Item)
                 {
-                    if (from.CheckTargetSkill(SkillName.ItemID, o, 0, 100))
+                    if (from.CheckTargetSkill(SkillName.ItemID, o, 0, 120))
                     {
                         if (o is BaseWeapon)
                             ((BaseWeapon)o).Identified = true;

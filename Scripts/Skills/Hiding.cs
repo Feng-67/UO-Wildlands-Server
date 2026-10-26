@@ -93,7 +93,7 @@ namespace Server.SkillHandlers
                     eable.Free();
                 }
 
-                ok = (!badCombat && m.CheckSkill(SkillName.Hiding, 0.0 - bonus, 100.0 - bonus));
+                ok = (!badCombat && m.CheckSkill(SkillName.Hiding, 0.0 - bonus, 120.0 - bonus));
             }
 
             if (badCombat)

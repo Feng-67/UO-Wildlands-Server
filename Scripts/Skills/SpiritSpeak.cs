@@ -37,7 +37,7 @@ namespace Server.SkillHandlers
 
 			m.RevealingAction();
 
-			if (m.CheckSkill(SkillName.SpiritSpeak, 0, 100))
+			if (m.CheckSkill(SkillName.SpiritSpeak, 0, 120))
 			{
 				if (!m.CanHearGhosts)
 				{
