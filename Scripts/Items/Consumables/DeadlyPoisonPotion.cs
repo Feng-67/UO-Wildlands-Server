@@ -33,7 +33,7 @@ namespace Server.Items
         {
             get
             {
-                return 100.0;
+                return 120.0;
             }
         }
         public override void Serialize(GenericWriter writer)
