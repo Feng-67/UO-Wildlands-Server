@@ -6,8 +6,8 @@
 		<accessLevel>Owner</accessLevel>
 		<flags>2</flags>
 		<created>2026-01-30T13:31:22.884182Z</created>
-		<lastLogin>2026-10-16T14:48:09.8217745Z</lastLogin>
-		<totalGameTime>P9DT37M42.2729406S</totalGameTime>
+		<lastLogin>2026-10-26T11:36:11.7643896Z</lastLogin>
+		<totalGameTime>P9DT48M37.7818561S</totalGameTime>
 		<chars>
 			<char index="0">105</char>
 		</chars>
@@ -17,7 +17,7 @@
 			<tag name="maxHouses">02</tag>
 			<tag name="Chat">Disabled</tag>
 		</tags>
-		<totalCurrency>161.76840325000057</totalCurrency>
+		<totalCurrency>161.76840320000059</totalCurrency>
 		<sovereigns>892798</sovereigns>
 	</account>
 	<account>
@@ -25,8 +25,8 @@
 		<newCryptPassword>7E-D0-74-B0-61-20-29-42-E3-72-87-14-39-A8-F2-E7-83-A4-D1-AB</newCryptPassword>
 		<flags>2</flags>
 		<created>2026-02-04T07:38:21.4165763Z</created>
-		<lastLogin>2026-10-16T14:48:16.8325918Z</lastLogin>
-		<totalGameTime>P4DT8H41M17.7762803S</totalGameTime>
+		<lastLogin>2026-10-26T11:46:44.0386Z</lastLogin>
+		<totalGameTime>P4DT8H41M40.9758118S</totalGameTime>
 		<chars>
 			<char index="0">33827</char>
 			<char index="1">9373</char>
